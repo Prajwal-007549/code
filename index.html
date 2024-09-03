@@ -1,0 +1,229 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+    <style>
+        .scroller1 {
+            width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+            background-color: var(--text-color);
+            white-space: nowrap;
+            border-bottom: 1px solid rgb(0, 0, 0);
+        }
+
+        .scroller1::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scroller_in1 {
+            display: inline-block;
+            white-space: nowrap;
+            animation-name: scrollller1;
+            animation-duration: 25s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .scroller_in1 h1 {
+            color: black;
+            font-weight: 900;
+            font-size: 5vw;
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        @keyframes scrollller1 {
+            from {
+                transform: translateX(0%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+    <div class="akheeScroller">
+        <div class="scroller1">
+            <div class="scroller_in1">
+                <h1>Prajwal</h1>
+                <h1>Prajwal </h1>
+                <h1>Prajwal </h1>
+                <h1>Prajwal </h1>
+                <h1>Prajwal </h1>
+                <h1>Prajwal </h1>
+            </div>
+            <div class="scroller_in1">
+                <h1>Prajwal </h1>
+                <h1>Prajwal </h1>
+                <h1>Prajwal </h1>
+                <h1>Prajwal </h1>
+                <h1>Prajwal </h1>
+                <h1>Prajwal </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="my-2 text-center"><b><i>classes</i></b></h1>
+        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ritus mi, egestas et imperdiet quis, tristique non mi
+        </h6>
+        <div class="row">
+            <!-- Basic Technical Writing -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="https://metapercept.com/images/training-certification/Basic-DITA%E2%80%93XML.jpg" alt="Basic Technical Writing" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">Basic Technical Writing</p>
+                        <p class="text-muted">This course focuses on understanding the basics of technical writing and developing technical writing skills. In this course, you will learn techniques to analyze writing contexts which help you to produce effective, clean, and reader-centered documents efficiently.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">Add to Cart</button>
+                                <button type="button" class="btn btn-primary">Order</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Confluence Advanced -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="https://metapercept.com/images/training-certification/Advanced-DITA–XML.jpg" alt="Confluence Advanced" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">Confluence Advanced</p>
+                        <p class="text-muted">This course ensures your documentation-type content is easy to manage and consume. It covers useful techniques to surface relevant documentation and standardize your content using templates and blueprints.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">Add to Cart</button>
+                                <button type="button" class="btn btn-primary">Order</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Confluence Basic -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/training-certification/Authoring-Tools.jpg" alt="Confluence Basic" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">Confluence Basic</p>
+                        <p class="text-muted">This course guides end users to create their own easy-to-use and well-formatted content. It covers templates, page and space structure, and categorization for content governance and discovery.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">Add to Cart</button>
+                                <button type="button" class="btn btn-primary">Order</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- XML Author -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/training-certification/Simplified-Technical-English.jpg" alt="XML Author" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">XML Author</p>
+                        <p class="text-muted">This course deepens knowledge in XML Author, in any industry. Learn about writing content in a fully structured and easy-to-use environment optimized for producing valid XML.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">Add to Cart</button>
+                                <button type="button" class="btn btn-primary">Order</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Advanced Technical Writing - API -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/training-certification/Technical-Writing.jpg" alt="Advanced Technical Writing - API" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">Advanced Technical Writing - API</p>
+                        <p class="text-muted">This course focuses on technical content deliverables containing instructions about how to effectively use and integrate with an API.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">Add to Cart</button>
+                                <button type="button" class="btn btn-primary">Order</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Basic DITA-XML -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/training-certification/Authoring-Tools.jpg" alt="Basic DITA-XML" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">Basic DITA-XML</p>
+                        <p class="text-muted">This course is for individuals keen to broaden their knowledge or specialize in basic DITA-XML. It focuses on what writers need to do differently to get their jobs done efficiently with DITA.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">Add to Cart</button>
+                                <button type="button" class="btn btn-primary">Order</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Advanced DITA-XML -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/training-certification/Basic-DITA–XML.jpg" alt="Advanced DITA-XML" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">Advanced DITA-XML</p>
+                        <p class="text-muted">This course is for individuals keen to specialize in advanced DITA-XML. It focuses on what writers need to do differently to get their jobs done quickly and efficiently with DITA.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">Add to Cart</button>
+                                <button type="button" class="btn btn-primary">Order</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- xMetal Author -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/training-certification/Advanced-DITA–XML.jpg" alt="xMetal Author" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">xMetal Author</p>
+                        <p class="text-muted">Learn xMetal for XML-based authoring to manage high-volume structured content development. Suitable for Technical Writers and Information Developers.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">Add to Cart</button>
+                                <button type="button" class="btn btn-primary">Order</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MadCap Flare -->
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="images/training-certification/Technical-Writing.jpg" alt="MadCap Flare" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">MadCap Flare</p>
+                        <p class="text-muted">This course develops technical writing skills to deepen knowledge of MadCap Flare for writing specialized content in structured formats using DITA-XML.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">Add to Cart</button>
+                                <button type="button" class="btn btn-primary">Order</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}
